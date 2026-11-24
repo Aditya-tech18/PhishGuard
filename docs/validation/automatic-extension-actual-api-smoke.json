@@ -1,0 +1,10 @@
+{
+  "application_version": "2.5.0",
+  "actual_trained_url_model_loaded": true,
+  "url_model_version": "3a4516d9641014ee",
+  "authenticated_url_prediction": "PASS",
+  "unauthenticated_rejected": "PASS",
+  "event_store_not_created": true,
+  "url_and_cnn_weights_unchanged_from_2_4": true,
+  "cnn_runtime_rerun": false
+}

@@ -1,0 +1,15 @@
+{
+  "scope": "Training-only URL-shape diagnostic; challenge is a small manually selected sanity probe, not a representative accuracy estimate",
+  "training_counts": {
+    "phishing_rows": 16111,
+    "phishing_non_root_paths": 11202,
+    "legitimate_rows": 16977,
+    "legitimate_non_root_paths": 0
+  },
+  "challenge": {
+    "inputs": 12,
+    "flagged_by_selected_model": 6,
+    "limitations": "Includes recognizable ordinary login/article URL forms and example-domain probes; no page-fetch or independent labeling was performed. This exposed false-positive risks, not a new calibrated benchmark."
+  },
+  "action": "Raw URL model scores and test metrics retained unchanged; path/login inputs surface an inconclusive review warning. No domain allowlist was added. Representative current benign path data and independent source/time evaluation are required before a protection claim."
+}

@@ -1,0 +1,196 @@
+{
+  "architecture": "resnet18-finetune-v1",
+  "weights_sha256": "5eb84248519052f38b5372637075d17fa309b5a421adca07dc3820b9c4c83d0a",
+  "best_epoch": 6,
+  "selection_pr_auc": 0.9754569621253836,
+  "epochs": 11,
+  "seed": 42,
+  "records_sha256": "94224a3b337bebd8ada03e4fc93f3872760c1f1a2e736f14302306e6651324dd",
+  "training_script_sha256": "1519c2da0b626924d61be1c4b9daea1ff69641e2e5d31e64f6364e392daf8980",
+  "rule": "Maximum selection PR AUC; calibration and test not scored before selection lock.",
+  "model_version": "experimental-cnn-v1-5eb842485190",
+  "threshold": 0.9128618836402893,
+  "class_polarity": "0=legitimate,1=phishing",
+  "calibration": {
+    "rows": 1082,
+    "threshold": 0.9128618836402893,
+    "precision": 0.9213483146067416,
+    "recall": 0.9136490250696379,
+    "f1": 0.9174825174825175,
+    "false_positive_rate": 0.03872752420470263,
+    "pr_auc": 0.9746788219194807,
+    "roc_auc": 0.9844812507464641,
+    "confusion": {
+      "tp": 328,
+      "fp": 28,
+      "fn": 31,
+      "tn": 695
+    },
+    "precision_95ci": [
+      0.8886751958574565,
+      0.9450252926387493
+    ],
+    "recall_95ci": [
+      0.8800387333666603,
+      0.9385005839575183
+    ]
+  },
+  "held_out_test": {
+    "rows": 2684,
+    "threshold": 0.9128618836402893,
+    "precision": 0.9285067873303168,
+    "recall": 0.8066037735849056,
+    "f1": 0.8632730332351704,
+    "false_positive_rate": 0.05594900849858357,
+    "pr_auc": 0.9441049302658168,
+    "roc_auc": 0.9526119336504713,
+    "confusion": {
+      "tp": 1026,
+      "fp": 79,
+      "fn": 246,
+      "tn": 1333
+    },
+    "precision_95ci": [
+      0.9117849285365985,
+      0.9422596172068297
+    ],
+    "recall_95ci": [
+      0.7839887180245517,
+      0.8273725091932735
+    ]
+  },
+  "target_met_on_test": false,
+  "data": {
+    "source": "User-supplied phish360.zip obtained through publisher academic access",
+    "publisher": "Phish360/CrossPhire",
+    "input_screenshots": 10748,
+    "decoded_screenshots": 10533,
+    "label_mapping": "legitimate=0; phish/phishing=1; trainval P-prefixed folders with an exact matching allowlisted brand label=1. Missing/unknown/mismatched labels excluded. Brand strings never enter the model.",
+    "rejected_count": 215,
+    "exclusions": {
+      "exact_pixel_duplicates": 51,
+      "trainval_group_overlaps_official_test": 521
+    },
+    "counts": {
+      "train": {
+        "legitimate": 3353,
+        "phishing": 1749
+      },
+      "selection": {
+        "legitimate": 718,
+        "phishing": 375
+      },
+      "calibration": {
+        "legitimate": 723,
+        "phishing": 359
+      },
+      "test": {
+        "legitimate": 1412,
+        "phishing": 1272
+      }
+    },
+    "old_corpus_exact_overlap": 0,
+    "previous_corpus_overlap_audited": true,
+    "old_corpus_used_for_training": false,
+    "policy": "Official test retained; trainval domains/content components intersecting test excluded. Selection/calibration split by registrable-domain/pixel components, seeds 4201/4202. Labels and image validity checked before modeling. No outcome-based filtering.",
+    "initialization": "Official ImageNet weights only; old PhishGuard tuned weights excluded.",
+    "input": "Full-frame RGB224 bilinear, ImageNet normalization; no filename, URL, label text, or brand as input.",
+    "limitations": "Publisher labels not independently verified. Exact dedup does not remove every near-duplicate template. This is an in-source domain-isolated benchmark, not universal live-web certification.",
+    "seconds": 262.5234832499991
+  },
+  "training_history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.37693908189685144,
+      "selection_pr_auc": 0.9564539768176876,
+      "selection_precision": 0.912,
+      "selection_recall": 0.912,
+      "seconds": 92.2
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.20276672450474365,
+      "selection_pr_auc": 0.9618005375835623,
+      "selection_precision": 0.921832884097035,
+      "selection_recall": 0.912,
+      "seconds": 224.2
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.11170824156825473,
+      "selection_pr_auc": 0.9685833714297644,
+      "selection_precision": 0.9175531914893617,
+      "selection_recall": 0.92,
+      "seconds": 318.0
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.10390135921703623,
+      "selection_pr_auc": 0.9619344215422144,
+      "selection_precision": 0.904,
+      "selection_recall": 0.904,
+      "seconds": 404.3
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.06520058252999143,
+      "selection_pr_auc": 0.9674770787181421,
+      "selection_precision": 0.9226666666666666,
+      "selection_recall": 0.9226666666666666,
+      "seconds": 489.8
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.050594279720839144,
+      "selection_pr_auc": 0.9754569621253836,
+      "selection_precision": 0.9281914893617021,
+      "selection_recall": 0.9306666666666666,
+      "seconds": 578.5
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.04680784968460997,
+      "selection_pr_auc": 0.9649058575068201,
+      "selection_precision": 0.9228723404255319,
+      "selection_recall": 0.9253333333333333,
+      "seconds": 692.8
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.043817595492103144,
+      "selection_pr_auc": 0.9700858651055387,
+      "selection_precision": 0.925531914893617,
+      "selection_recall": 0.928,
+      "seconds": 800.8
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.0327262505575354,
+      "selection_pr_auc": 0.9630396472680155,
+      "selection_precision": 0.9175531914893617,
+      "selection_recall": 0.92,
+      "seconds": 907.5
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.02166951766888842,
+      "selection_pr_auc": 0.9747792434604617,
+      "selection_precision": 0.9306666666666666,
+      "selection_recall": 0.9306666666666666,
+      "seconds": 1004.6
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.008291606702174414,
+      "selection_pr_auc": 0.9733016261278487,
+      "selection_precision": 0.925531914893617,
+      "selection_recall": 0.928,
+      "seconds": 1103.0
+    }
+  ],
+  "positive_class_weight": 1.917095483133219,
+  "device": "mps",
+  "evaluation_device": "cpu",
+  "seconds": 1306.6524692079984,
+  "limitations": "Publisher/source-specific evaluation, not certification for all live websites. Previous PhishGuard test is a different corpus; do not compare headline numbers as identical cohorts."
+}

@@ -1,0 +1,15 @@
+{
+  "input": {
+    "input": 60000,
+    "accepted": 59959,
+    "rejected": 41
+  },
+  "unique_normalized_urls": 58475,
+  "conflicting_unique_urls": 4,
+  "policy": "exclude_all_ambiguous",
+  "written": 58471,
+  "labels": {
+    "1": 30116,
+    "0": 28355
+  }
+}

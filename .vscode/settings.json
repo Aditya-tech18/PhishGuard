@@ -1,0 +1,16 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv-phishguard26/bin/python",
+  "python.terminal.activateEnvironment": true,
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/src"
+  ],
+  "search.exclude": {
+    "**/data/**": true,
+    "**/.venv*/**": true,
+    "**/models/**": true
+  },
+  "files.watcherExclude": {
+    "**/data/**": true,
+    "**/.venv*/**": true
+  }
+}

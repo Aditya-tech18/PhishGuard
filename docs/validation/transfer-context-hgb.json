@@ -1,0 +1,32 @@
+{
+  "scope": "Image + lexical domain, NOT image-only CNN; domain derived from declared filename-host source; no test scoring or selection",
+  "candidates": {
+    "hgb-leaves15": {
+      "selection_pr_auc": 0.8353233890970188,
+      "selection_balanced": {
+        "precision": 0.7476190476190476,
+        "recall": 0.7658536585365854,
+        "min_precision_recall": 0.7476190476190476
+      },
+      "fit_seconds": 15.525477832998149
+    },
+    "hgb-leaves31": {
+      "selection_pr_auc": 0.8355612713680469,
+      "selection_balanced": {
+        "precision": 0.7638190954773869,
+        "recall": 0.7414634146341463,
+        "min_precision_recall": 0.7414634146341463
+      },
+      "fit_seconds": 37.90221916598966
+    },
+    "hgb-leaves63": {
+      "selection_pr_auc": 0.8379422389368663,
+      "selection_balanced": {
+        "precision": 0.7549019607843137,
+        "recall": 0.751219512195122,
+        "min_precision_recall": 0.751219512195122
+      },
+      "fit_seconds": 61.31225195800653
+    }
+  }
+}

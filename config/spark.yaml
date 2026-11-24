@@ -1,0 +1,7 @@
+version: 2
+master: local[2]
+app_name: PhishGuard2
+shuffle_partitions: 4
+compression: snappy
+# Spark 3.5.8 uses Scala 2.12; Java 17 recommended.
+kafka_package: org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.8

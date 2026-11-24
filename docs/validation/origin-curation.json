@@ -1,0 +1,11 @@
+{
+  "input": {
+    "input": 58471,
+    "accepted": 58471
+  },
+  "unique_origins": 44041,
+  "conflicting_origins_excluded": 33,
+  "written": 44008,
+  "policy": "origin-only; all ambiguous labels excluded",
+  "limitations": "Inherited dataset labels and source bias remain; origin risk cannot establish individual page intent."
+}

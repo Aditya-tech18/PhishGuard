@@ -1,0 +1,19 @@
+{
+  "consumer": {
+    "processed": 1,
+    "stable_event_id": true,
+    "raw_url_omitted": true
+  },
+  "crash_replay": {
+    "crash_window_replayed": true,
+    "prediction_rows": 3,
+    "unique_event_ids": 1,
+    "guarantee": "at_least_once_requires_deduplication"
+  },
+  "spark": {
+    "rows": 3,
+    "invalid_rows": 1,
+    "url_omitted": true,
+    "checkpoint_restart_no_extra_rows": true
+  }
+}

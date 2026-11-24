@@ -1,0 +1,9 @@
+:root{color-scheme:light;font:13px/1.5 system-ui,sans-serif;color:#14221a;background:#f3faf5}*{box-sizing:border-box}
+body{width:380px;margin:0;padding:18px}header{display:flex;gap:10px;align-items:center;margin-bottom:16px}h1{font-size:23px;letter-spacing:-.7px;margin:0}h1 small{font-size:11px;color:#5b6d61}
+header p{margin:0;color:#596d60;font-size:12px}section,details{padding:15px;border-radius:16px;background:#fff;border:1px solid #dceadf;margin-bottom:10px}
+.hero{background:#34c363;border-color:#34c363}.hero .muted{color:#173e25}h2{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:#526459;margin:0 0 9px}
+p{margin:8px 0}.muted,footer{font-size:11px;color:#596b60}.switch{font-size:16px;font-weight:750}.status{font-size:12px;font-weight:700}label{display:block;margin:9px 0}input[type=checkbox]{accent-color:#156535}
+input[type=password]{width:100%;padding:11px;border:1px solid #c6d9cc;border-radius:9px;font:inherit}.row{display:flex;gap:8px}
+button{font:inherit;width:100%;cursor:pointer;background:#34c363;color:#14221a;font-weight:700;border:0;border-radius:10px;padding:11px;margin-top:8px}
+button.secondary{background:#eef5f0}button:disabled{opacity:.45;cursor:default}button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #156535;outline-offset:3px}
+summary{font-weight:700;cursor:pointer}#site{font-family:ui-monospace,monospace;overflow-wrap:anywhere}#result{white-space:pre-wrap;border-left:3px solid #d7cf00;padding-left:10px}footer{padding:6px}

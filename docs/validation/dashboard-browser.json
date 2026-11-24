@@ -1,0 +1,12 @@
+{
+  "views": [
+    "Check URL",
+    "Prediction",
+    "Model report",
+    "Data quality",
+    "Overview"
+  ],
+  "console_errors": [],
+  "real_api_and_model": true,
+  "screenshots": 5
+}

@@ -1,0 +1,34 @@
+{
+  "application_version": "2.3.0",
+  "pytest": {
+    "passed": 172,
+    "warnings": 8,
+    "seconds": 64.31,
+    "statement_coverage_percent": 74,
+    "optional_markers": [
+      "vision",
+      "spark",
+      "kafka",
+      "browser"
+    ]
+  },
+  "source_lint": "passed",
+  "medium_high_bandit_findings": 0,
+  "dependency_consistency": "No broken requirements found.",
+  "managed_launcher": "authenticated URL/image inference passed; services stopped and transient key removed",
+  "actual_extension": {
+    "actual_toolbar": true,
+    "real_url_model": true,
+    "real_cnn": true,
+    "on_off_and_per_capture_consent": "passed",
+    "session_key_clear": "passed"
+  },
+  "training_entry_point": {
+    "training_pipeline": "passed; one epoch on training/validation-only sample",
+    "offline_reload_and_prediction": "passed",
+    "quality_claim": "none; smoke verification only"
+  },
+  "docker_2_3": "not verified: fresh isolated daemon connection unavailable; historical 2.2 container result is not a current pass",
+  "remote_vercel": "not deployed; URL profile unchanged",
+  "requested_85_percent_precision_and_recall": "NOT achieved"
+}

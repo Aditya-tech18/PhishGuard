@@ -1,0 +1,375 @@
+{
+  "architecture": "resnet18-finetune-v1",
+  "weights_sha256": "fd1112986223bf186c9d0234e6e65698b22ee6c143b942514df19ced320575e9",
+  "model_version": "experimental-cnn-v1-fd1112986223",
+  "threshold": 0.4776330292224884,
+  "pretrained_source": "https://download.pytorch.org/models/resnet18-f37072fd.pth",
+  "pretrained_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+  "selection_policy": "Maximum PR AUC on separate group-isolated selection fold; calibration/test/source-heldout outcomes excluded",
+  "threshold_policy": "Maximum minimum of precision/recall on separate calibration fold only",
+  "best_epoch": 10,
+  "training_history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.5133674824886814,
+      "selection_pr_auc": 0.6348587032480216,
+      "selection_balanced": {
+        "precision": 0.5927835051546392,
+        "recall": 0.5609756097560976,
+        "min_precision_recall": 0.5609756097560976
+      },
+      "elapsed_seconds": 192.6248447090038
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.35638270935902966,
+      "selection_pr_auc": 0.667158785767116,
+      "selection_balanced": {
+        "precision": 0.615,
+        "recall": 0.6,
+        "min_precision_recall": 0.6
+      },
+      "elapsed_seconds": 340.7709568749997
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.2584861674042349,
+      "selection_pr_auc": 0.642644342366478,
+      "selection_balanced": {
+        "precision": 0.5467289719626168,
+        "recall": 0.5707317073170731,
+        "min_precision_recall": 0.5467289719626168
+      },
+      "elapsed_seconds": 500.28508254198823
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.1934198430278752,
+      "selection_pr_auc": 0.6510250456796678,
+      "selection_balanced": {
+        "precision": 0.5645933014354066,
+        "recall": 0.5756097560975609,
+        "min_precision_recall": 0.5645933014354066
+      },
+      "elapsed_seconds": 630.042404250009
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.14940508887299836,
+      "selection_pr_auc": 0.6674504025927077,
+      "selection_balanced": {
+        "precision": 0.6,
+        "recall": 0.6,
+        "min_precision_recall": 0.6
+      },
+      "elapsed_seconds": 768.7670707920333
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.1204199876698177,
+      "selection_pr_auc": 0.6504866706700176,
+      "selection_balanced": {
+        "precision": 0.59,
+        "recall": 0.5756097560975609,
+        "min_precision_recall": 0.5756097560975609
+      },
+      "elapsed_seconds": 901.3659287089831
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.10482896083234716,
+      "selection_pr_auc": 0.6602454548270613,
+      "selection_balanced": {
+        "precision": 0.6313131313131313,
+        "recall": 0.6097560975609756,
+        "min_precision_recall": 0.6097560975609756
+      },
+      "elapsed_seconds": 1026.3253902500146
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.09300698217324763,
+      "selection_pr_auc": 0.6502095257484801,
+      "selection_balanced": {
+        "precision": 0.5970149253731343,
+        "recall": 0.5853658536585366,
+        "min_precision_recall": 0.5853658536585366
+      },
+      "elapsed_seconds": 1160.44054791698
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.08150419391955871,
+      "selection_pr_auc": 0.6724026685880314,
+      "selection_balanced": {
+        "precision": 0.5960591133004927,
+        "recall": 0.5902439024390244,
+        "min_precision_recall": 0.5902439024390244
+      },
+      "elapsed_seconds": 1288.982666625001
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.06829907771413425,
+      "selection_pr_auc": 0.675428951607286,
+      "selection_balanced": {
+        "precision": 0.5902439024390244,
+        "recall": 0.5902439024390244,
+        "min_precision_recall": 0.5902439024390244
+      },
+      "elapsed_seconds": 1386.2545299589983
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.06534194851803185,
+      "selection_pr_auc": 0.6711347668998208,
+      "selection_balanced": {
+        "precision": 0.5961538461538461,
+        "recall": 0.6048780487804878,
+        "min_precision_recall": 0.5961538461538461
+      },
+      "elapsed_seconds": 1482.4319785840344
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.056999112328976115,
+      "selection_pr_auc": 0.6628005523509786,
+      "selection_balanced": {
+        "precision": 0.5619047619047619,
+        "recall": 0.5756097560975609,
+        "min_precision_recall": 0.5619047619047619
+      },
+      "elapsed_seconds": 1580.6721652920241
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.05363675127473038,
+      "selection_pr_auc": 0.6528934497470068,
+      "selection_balanced": {
+        "precision": 0.5576923076923077,
+        "recall": 0.5658536585365853,
+        "min_precision_recall": 0.5576923076923077
+      },
+      "elapsed_seconds": 1685.132391125022
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.05383636865511511,
+      "selection_pr_auc": 0.6595911150449794,
+      "selection_balanced": {
+        "precision": 0.5714285714285714,
+        "recall": 0.5658536585365853,
+        "min_precision_recall": 0.5658536585365853
+      },
+      "elapsed_seconds": 1806.958022167033
+    }
+  ],
+  "data": {
+    "source_rows": 13906,
+    "clean_rows": 13848,
+    "excluded": {
+      "within_split_duplicates": 56,
+      "cross_split_pixel_duplicates": 2
+    },
+    "counts": {
+      "train": {
+        "phishing": 1860,
+        "legitimate": 6865
+      },
+      "selection": {
+        "legitimate": 1608,
+        "phishing": 205
+      },
+      "calibration": {
+        "phishing": 98,
+        "legitimate": 672
+      },
+      "test": {
+        "legitimate": 2296,
+        "phishing": 244
+      }
+    },
+    "selection_calibration_seed": 2718,
+    "selection_calibration_group_overlap": false,
+    "preprocessing": "RGB bilinear full-frame resize 224x224; ImageNet channel normalization; no filename/URL input",
+    "policy": "All resized-pixel duplicates crossing split boundaries excluded symmetrically before any modeling; within-split byte-equivalent derivatives deduplicated. Source corpus untouched.",
+    "limitations": "Original split and filename-derived group provenance retained. Previously observed test cohort is not a fresh independent external benchmark."
+  },
+  "class_polarity": "0=legitimate,1=phishing",
+  "seed": 42,
+  "device": "mps",
+  "calibration": {
+    "rows": 770,
+    "threshold": 0.4776330292224884,
+    "precision": 0.6326530612244898,
+    "recall": 0.6326530612244898,
+    "f1": 0.6326530612244898,
+    "pr_auc": 0.7374352461146039,
+    "roc_auc": 0.9214498299319728,
+    "brier": 0.07701983355593174,
+    "false_positive_rate": 0.05357142857142857,
+    "confusion": {
+      "tn": 636,
+      "fp": 36,
+      "fn": 36,
+      "tp": 62
+    }
+  },
+  "calibration_intervals": {
+    "method": "Wilson 95% intervals, individual examples; not domain-bootstrap intervals",
+    "precision": [
+      0.5338875533526599,
+      0.7214112247783229
+    ],
+    "recall": [
+      0.5338875533526599,
+      0.7214112247783229
+    ]
+  },
+  "target_precision_recall": 0.85,
+  "target_met_on_calibration": false,
+  "limitations": "Experimental image-only CNN. Original filename-based domain groups/publisher labels are not independently verified. Previously observed test cohort is not a new independent external benchmark. Scores are not calibrated safety probabilities. No raw URLs/filenames are model inputs.",
+  "held_out_test": {
+    "rows": 2540,
+    "threshold": 0.4776330292224884,
+    "precision": 0.54296875,
+    "recall": 0.569672131147541,
+    "f1": 0.556,
+    "pr_auc": 0.6252784509032201,
+    "roc_auc": 0.8943547580967612,
+    "brier": 0.07228324740958159,
+    "false_positive_rate": 0.0509581881533101,
+    "confusion": {
+      "tn": 2179,
+      "fp": 117,
+      "fn": 105,
+      "tp": 139
+    }
+  },
+  "held_out_test_intervals": {
+    "method": "Wilson 95% intervals, individual examples; not domain-bootstrap intervals",
+    "precision": [
+      0.4817606408924305,
+      0.6029063714459713
+    ],
+    "recall": [
+      0.5069412585622692,
+      0.6302432147771893
+    ]
+  },
+  "target_met_on_test": false,
+  "external_source": {
+    "all_valid_publisher_cases": {
+      "metrics": {
+        "rows": 977,
+        "threshold": 0.4776330292224884,
+        "precision": 1.0,
+        "recall": 0.17402269861286254,
+        "f1": 0.2964554242749731,
+        "pr_auc": 0.9056311647753312,
+        "roc_auc": 0.6559638686331487,
+        "brier": 0.661393720667083,
+        "false_positive_rate": 0.0,
+        "confusion": {
+          "tn": 184,
+          "fp": 0,
+          "fn": 655,
+          "tp": 138
+        }
+      },
+      "intervals": {
+        "method": "Wilson 95% intervals, individual examples; not domain-bootstrap intervals",
+        "precision": [
+          0.9729172355344272,
+          1.0
+        ],
+        "recall": [
+          0.14922348908377517,
+          0.20196488813100058
+        ]
+      },
+      "target_met": false
+    },
+    "unseen_domains_and_content": {
+      "metrics": {
+        "rows": 756,
+        "threshold": 0.4776330292224884,
+        "precision": 1.0,
+        "recall": 0.09004739336492891,
+        "f1": 0.16521739130434782,
+        "pr_auc": 0.8967436384195977,
+        "roc_auc": 0.5954867131609705,
+        "brier": 0.7559878489346376,
+        "false_positive_rate": 0.0,
+        "confusion": {
+          "tn": 123,
+          "fp": 0,
+          "fn": 576,
+          "tp": 57
+        }
+      },
+      "intervals": {
+        "method": "Wilson 95% intervals, individual examples; not domain-bootstrap intervals",
+        "precision": [
+          0.9368611651470209,
+          0.9999999999999998
+        ],
+        "recall": [
+          0.07015120151321745,
+          0.11488929355585907
+        ]
+      },
+      "target_met": false
+    },
+    "provenance": {
+      "source": {
+        "repository": "seirin16/Dataset_Phising",
+        "revision": "5de409d51afc5b98d3ed3a3323a9630fbff8dcff",
+        "file": "Dataset.zip",
+        "sha256": "2d8e56fc4dabc7f2e14708fc7ef26a53c9c48ec9ea2f918a00ff52192e6f1fa2",
+        "bytes": 842270669,
+        "license": "cc-by-nc-4.0",
+        "purpose": "independent source audit/evaluation only; no raw redistribution; no test-based checkpoint tuning"
+      },
+      "counts": {
+        "screenshot_entries": 1000,
+        "overlap_training_domain": 221,
+        "overlap_training_content": 0,
+        "rejected_schema_or_image": 23
+      },
+      "labels_all_valid": {
+        "0": 184,
+        "1": 793
+      },
+      "labels_unseen_domains_and_content": {
+        "0": 123,
+        "1": 633
+      },
+      "label_mapping": "Publisher numeric labels 0=legitimate,1=phishing; not independently relabeled",
+      "scope": "Source audit only so far; no scores or thresholds fitted on these examples. All HTML ignored and no submitted website visited.",
+      "limitations": "Publisher describes manual verification; that claim is not an independent intent audit. Some URLs may represent educational clones or inactive content."
+    }
+  },
+  "baseline_same_cohort": {
+    "model_version": "experimental-cnn-v1-73e5ebb5ae6d",
+    "same_cleaned_test_cohort": true,
+    "metrics": {
+      "rows": 2540,
+      "threshold": 0.7599999999999999,
+      "precision": 0.5220125786163522,
+      "recall": 0.3401639344262295,
+      "f1": 0.4119106699751861,
+      "pr_auc": 0.529224901962646,
+      "roc_auc": 0.869416519106643,
+      "brier": 0.09077479302437115,
+      "false_positive_rate": 0.033101045296167246,
+      "confusion": {
+        "tn": 2220,
+        "fp": 76,
+        "fn": 161,
+        "tp": 83
+      }
+    },
+    "used_for_candidate_selection": false
+  }
+}

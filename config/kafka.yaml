@@ -1,0 +1,7 @@
+version: 2
+raw_topic: phishguard.raw_urls
+prediction_topic: phishguard.predictions
+dead_letter_topic: phishguard.dead_letter
+partitions: 3
+retention_ms: 3600000
+# Local broker only. Production: SASL_SSL and ACLs, no plaintext cross-host.

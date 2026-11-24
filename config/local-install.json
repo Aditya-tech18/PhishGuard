@@ -1,0 +1,6 @@
+{
+  "version": "2.6.0",
+  "url_model": "models/releases/2.6.0/url-model.json",
+  "vision_model": "models/releases/2.6.0/vision-model.pt",
+  "reports": "reports/releases/2.6.0"
+}

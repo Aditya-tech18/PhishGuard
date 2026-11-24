@@ -1,0 +1,9 @@
+{
+  "records": 9961,
+  "records_sha256": "94224a3b337bebd8ada03e4fc93f3872760c1f1a2e736f14302306e6651324dd",
+  "all_phase_pairs_domain_content_disjoint": true,
+  "unique_pixels": true,
+  "publisher_test_fold_used_only_as_test": true,
+  "label_and_feature_separation": "Dataset __getitem__ reads only cache_path RGB pixels; label is the supervised target.",
+  "archive_sha256": "64f573e6e52a9deb486f9d07d87c56e245065545fa161e8db6f080732d5ddd5f"
+}

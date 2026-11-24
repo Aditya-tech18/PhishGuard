@@ -1,0 +1,14 @@
+{
+  "url_etl": {
+    "accepted_unique": 58471
+  },
+  "image_etl": {
+    "files": 21311,
+    "bytes": 4659375662,
+    "valid_files": 21311,
+    "invalid_files": 0,
+    "duplicate_groups": 609,
+    "output_contains_pixels": false,
+    "verification": "PNG/JPEG structural verification and bounded dimensions; not visual label verification"
+  }
+}

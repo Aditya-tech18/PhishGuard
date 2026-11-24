@@ -1,0 +1,31 @@
+{
+  "source_rows": 13906,
+  "clean_rows": 13848,
+  "excluded": {
+    "within_split_duplicates": 56,
+    "cross_split_pixel_duplicates": 2
+  },
+  "counts": {
+    "train": {
+      "phishing": 1860,
+      "legitimate": 6865
+    },
+    "selection": {
+      "legitimate": 1608,
+      "phishing": 205
+    },
+    "calibration": {
+      "phishing": 98,
+      "legitimate": 672
+    },
+    "test": {
+      "legitimate": 2296,
+      "phishing": 244
+    }
+  },
+  "selection_calibration_seed": 2718,
+  "selection_calibration_group_overlap": false,
+  "preprocessing": "RGB bilinear full-frame resize 224x224; ImageNet channel normalization; no filename/URL input",
+  "policy": "All resized-pixel duplicates crossing split boundaries excluded symmetrically before any modeling; within-split byte-equivalent derivatives deduplicated. Source corpus untouched.",
+  "limitations": "Original split and filename-derived group provenance retained. Previously observed test cohort is not a fresh independent external benchmark."
+}

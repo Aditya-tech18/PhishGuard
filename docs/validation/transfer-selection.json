@@ -1,0 +1,66 @@
+{
+  "winner": "resnet-finetune-adaptive-bn",
+  "candidates": {
+    "resnet-frozen": {
+      "selection_pr_auc": 0.592158451231358,
+      "winner": "rbf-C10.0",
+      "report": "frozen-head-selection.json"
+    },
+    "convnext-frozen": {
+      "selection_pr_auc": 0.608402662262137,
+      "winner": "linear-C0.01",
+      "report": "convnext/frozen-head-selection.json"
+    },
+    "clip-frozen": {
+      "selection_pr_auc": 0.641634771753675,
+      "winner": "rbf-C10.0",
+      "report": "clip/frozen-head-selection.json"
+    },
+    "resnet-finetune-frozen-bn": {
+      "selection_pr_auc": 0.6538062804211586,
+      "epoch": 5,
+      "report": "finetune-selection.json"
+    },
+    "resnet-finetune-adaptive-bn": {
+      "selection_pr_auc": 0.675428951607286,
+      "epoch": 10,
+      "report": "finetune-bn/finetune-selection.json"
+    }
+  },
+  "rule": "Maximum PR AUC on separate group-isolated selection fold; calibration/test/source-heldout outcomes excluded",
+  "selected_weights_sha256": "fd1112986223bf186c9d0234e6e65698b22ee6c143b942514df19ced320575e9",
+  "selected_epoch": 10,
+  "training_epochs": 14,
+  "data_preparation": {
+    "source_rows": 13906,
+    "clean_rows": 13848,
+    "excluded": {
+      "within_split_duplicates": 56,
+      "cross_split_pixel_duplicates": 2
+    },
+    "counts": {
+      "train": {
+        "phishing": 1860,
+        "legitimate": 6865
+      },
+      "selection": {
+        "legitimate": 1608,
+        "phishing": 205
+      },
+      "calibration": {
+        "phishing": 98,
+        "legitimate": 672
+      },
+      "test": {
+        "legitimate": 2296,
+        "phishing": 244
+      }
+    },
+    "selection_calibration_seed": 2718,
+    "selection_calibration_group_overlap": false,
+    "preprocessing": "RGB bilinear full-frame resize 224x224; ImageNet channel normalization; no filename/URL input",
+    "policy": "All resized-pixel duplicates crossing split boundaries excluded symmetrically before any modeling; within-split byte-equivalent derivatives deduplicated. Source corpus untouched.",
+    "limitations": "Original split and filename-derived group provenance retained. Previously observed test cohort is not a fresh independent external benchmark."
+  },
+  "threshold_and_test_not_evaluated_at_lock": true
+}

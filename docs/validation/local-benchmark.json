@@ -1,0 +1,22 @@
+{
+  "requests": 500,
+  "concurrency": 8,
+  "elapsed_seconds": 0.6982455829856917,
+  "requests_per_second": 716.0804338525202,
+  "latency_ms": {
+    "mean": 10.929872058331966,
+    "p50": 10.530521016335115,
+    "p95": 14.002536862972182,
+    "p99": 24.89051965589169,
+    "max": 27.333000034559518
+  },
+  "status_counts": {
+    "200": 500
+  },
+  "model_version": "dd73426d432f5b77",
+  "environment": {
+    "machine": "arm64",
+    "python": "3.11.18"
+  },
+  "scope": "loopback single-service experiment, not a public capacity or availability guarantee"
+}

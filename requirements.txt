@@ -1,0 +1,2 @@
+# Editable install includes defined extras; exact tested environment is separately recorded.
+-e .[api,ml,streaming,dashboard]

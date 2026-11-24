@@ -1,0 +1,19 @@
+# Version 2 configuration. Environment variables override runtime secrets/paths.
+version: 2
+api:
+  host: 127.0.0.1
+  port: 8000
+  max_request_bytes: 65536
+  rate_limit_per_minute: 60
+privacy:
+  store_events: false
+  retention_days: 7
+  store_raw_urls: false
+  telemetry: false
+ml:
+  threshold: 0.5
+  random_seed: 42
+  split: registrable_domain
+vision:
+  enabled: false
+  max_image_bytes: 5000000

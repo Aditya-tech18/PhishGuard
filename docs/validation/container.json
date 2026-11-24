@@ -1,0 +1,15 @@
+{
+  "image_id": "sha256:486cba9e431701ada7f8a895ee34fce2c8a628842a24c8cc3153029f8adbf33c",
+  "user": "10001",
+  "read_only_root": true,
+  "cap_drop": [
+    "ALL"
+  ],
+  "health_http": 200,
+  "authenticated_prediction": 200,
+  "unauthenticated_prediction": 401,
+  "untrusted_host": 400,
+  "storage_enabled": false,
+  "model_version": "dd73426d432f5b77",
+  "application_version": "2.0.1"
+}

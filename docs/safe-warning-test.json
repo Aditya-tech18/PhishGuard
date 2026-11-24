@@ -1,0 +1,9 @@
+{
+  "url": "http://paypal-security-account-update-verify-login.127.0.0.1.nip.io:8766",
+  "harmless_local_page": true,
+  "real_url_model_version": "3a4516d9641014ee",
+  "phishing_score": 0.9971663117998493,
+  "actual_chromium_dns_and_warning_verified": true,
+  "verdict_overridden": false,
+  "note": "Functional warning demo using a suspicious-looking hostname. This harmless page is not a real phishing sample or a model accuracy evaluation."
+}

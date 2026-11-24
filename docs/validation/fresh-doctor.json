@@ -1,0 +1,56 @@
+{
+  "ready": true,
+  "checks": [
+    {
+      "name": "python",
+      "status": "pass",
+      "detail": "3.11.18"
+    },
+    {
+      "name": "numpy",
+      "status": "pass",
+      "detail": "installed"
+    },
+    {
+      "name": "pydantic",
+      "status": "pass",
+      "detail": "installed"
+    },
+    {
+      "name": "yaml",
+      "status": "pass",
+      "detail": "installed"
+    },
+    {
+      "name": "fastapi",
+      "status": "pass",
+      "detail": "installed"
+    },
+    {
+      "name": "uvicorn",
+      "status": "pass",
+      "detail": "installed"
+    },
+    {
+      "name": "httpx",
+      "status": "pass",
+      "detail": "installed"
+    },
+    {
+      "name": "streamlit",
+      "status": "pass",
+      "detail": "installed"
+    },
+    {
+      "name": "url_model",
+      "status": "pass",
+      "detail": "random_forest, version dd73426d432f5b77"
+    },
+    {
+      "name": "session_key",
+      "status": "pass",
+      "detail": "launch command creates a fresh private session key"
+    }
+  ],
+  "scope": "local prerequisites; broker/cloud availability not probed"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "phishguard-isolated-browser-tests",
+  "private": true,
+  "version": "2.5.0",
+  "description": "Development-only browser tests; not extension runtime dependencies",
+  "devDependencies": { "playwright": "1.65.1" }
+}

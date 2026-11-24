@@ -1,0 +1,39 @@
+{
+  "application_version": "2.1.0",
+  "pytest": {
+    "passed": 139,
+    "warnings": 9,
+    "seconds": 59.17,
+    "statement_coverage_percent": 76,
+    "markers": [
+      "spark",
+      "kafka",
+      "vision",
+      "browser"
+    ]
+  },
+  "ruff": "passed",
+  "javascript_syntax": "passed",
+  "dependency_consistency": "passed",
+  "medium_high_bandit_findings": 0,
+  "real_trained_backend_toolbar": {
+    "actual_toolbar": true,
+    "real_url_model": true,
+    "real_cnn": true,
+    "on_off_and_per_capture_consent": "passed",
+    "session_key_clear": "passed"
+  },
+  "managed_url_and_cnn_launcher": "passed",
+  "compose_configuration": "passed",
+  "vision_container_runtime": "not executed; insufficient local disk headroom for isolated runtime build",
+  "source_and_zip_integrity": "verified during packaging",
+  "existing_desktop_data": "read only; no merge applied",
+  "historical_evidence": "previous-2.0.1-report.md",
+  "extracted_zip_install": {
+    "result": "passed",
+    "dependencies": "shared tested dependency set; not a fresh dependency resolution",
+    "module_origin": "isolated installed site-packages"
+  },
+  "extracted_installed_doctor": "ready",
+  "extracted_installed_launcher": "URL/image authenticated smoke passed; services and transient key cleaned up"
+}

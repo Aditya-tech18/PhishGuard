@@ -1,0 +1,9 @@
+version: 2
+feature_schema: lexical-v2
+classifier: logistic_regression
+C: 1.0
+max_iter: 1000
+threshold: 0.5
+validation_fraction: 0.2
+test_fraction: 0.2
+# Labels must be explicitly mapped at ingestion. Never guess polarity.

@@ -1,0 +1,11 @@
+{
+  "fix": "Request-disconnect handling and repeated-start behavior",
+  "python_regressions_passed": 74,
+  "real_aborted_http_requests_verified": 12,
+  "all_three_pages_healthy": true,
+  "installed_extension_live_integration_passed": true,
+  "missing_extension_navigates_to_setup": true,
+  "native_chrome_permission_automated": false,
+  "server_left_running": "http://127.0.0.1:8000",
+  "original_dataset_and_model_weights_changed": false
+}

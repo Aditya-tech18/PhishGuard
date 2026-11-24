@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>Connect PhishGuard</title><link rel="stylesheet" href="popup.css"></head><body>
+<header><img src="icon128.png" width="42" height="42" alt=""><div><h1>PhishGuard <small>2.6</small></h1><p>Your browser. A little more aware.</p></div></header>
+<p>Dashboard paired. Enable automatic checks below and approve website access, then return to the dashboard.</p><section class="hero"><label class="switch"><input id="enabled" type="checkbox"> Automatic URL checks</label>
+<p id="state" class="status">OFF · no automatic checks</p>
+<p>ON karne par open aur naye HTTP(S) tabs ke domains local API se check honge. Warning sirf suspicious result par aayegi.</p>
+<p class="muted">Browser website-access permission maangega. Sirf domain/origin bheja jata hai; path, query, history aur screenshots auto-send nahi hote.</p></section>
+<section><h2>Current website</h2><strong id="site">Turn ON to start</strong><p id="live" role="status">No current result.</p><button id="scan" disabled>Check current website</button></section>
+<details><summary>Connect your local server</summary><label for="key">Session API key</label>
+<input id="key" type="password" autocomplete="off" minlength="32" placeholder="Paste local session key">
+<div class="row"><button id="save">Save key</button><button id="clear" class="secondary">Forget key</button></div>
+<p class="muted">Start the PhishGuard local server first. Key stays in browser-session storage, never synced.</p></details>
+<section><label><input id="notificationsEnabled" type="checkbox"> Also show browser notifications</label><p class="muted">Optional permission. On-page warnings work without OS notifications.</p></section>
+<details><summary>Optional visual / CNN check</summary><p>Screenshot mein private messages aur form details aa sakte hain. Sensitive content hide karein.</p>
+<label><input id="imageEnabled" type="checkbox"> Enable screenshot checks</label>
+<label><input id="imageConsent" type="checkbox"> Capture and send this visible tab for this one check.</label>
+<button id="scanImage" disabled>Capture &amp; analyze screenshot</button><p class="muted">Screenshots are never captured automatically.</p></details>
+<p id="result" role="status" aria-live="polite"></p><footer>Domain-based model estimates can miss scams and flag genuine sites. Pages are warned about, not blocked.</footer>
+<script src="popup.js"></script><style>body{margin:32px auto;max-width:calc(100vw - 24px)}</style></body></html>

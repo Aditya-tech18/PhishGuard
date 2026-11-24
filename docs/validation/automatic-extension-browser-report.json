@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checks": [
+    "OFF: zero automatic requests",
+    "Actual popup ON scans existing tab; origin-only payload; no low-risk popup",
+    "Real new-tab page warning; friendly wording; model reason rendered as inert text",
+    "Dismiss works; navigation rechecks; OFF removes warning and stops new requests",
+    "Late phishing response discarded after navigation",
+    "Late phishing response discarded after OFF",
+    "No browsing results/URLs stored; no automatic screenshots"
+  ],
+  "playwright": "1.65.1",
+  "chromium": "159.0.8154.6",
+  "native_optional_permission_prompt_automated": false,
+  "fixture_policy": "Isolated profile; pregranted website hosts and ephemeral deterministic local API; synthetic .test pages only",
+  "live_phishing_sites_visited": false,
+  "personal_browser_profile_used": false
+}

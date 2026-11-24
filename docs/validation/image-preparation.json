@@ -1,0 +1,40 @@
+{
+  "content_overlap": false,
+  "counts": {
+    "ambiguous_content_groups": 18,
+    "ambiguous_content_images": 579,
+    "duplicate_images_removed": 6813,
+    "input_files": 21311,
+    "rejected_filename_or_file": 13
+  },
+  "group_fingerprints": {
+    "test": "de56750f1e2fcf864ddc6e9f4bfc74cf79247d89b8faea26da56b02b45374d6b",
+    "train": "194efc50a52ccef1512f804ee3676f35f23c153e8bf67ba64f001c730f481106",
+    "val": "d9d8da75281bd0225b36c838f0340af1d91898941f5352d3fd869d64e308d9ac"
+  },
+  "group_overlap": false,
+  "grouping": "registrable domain parsed from numeric-id_hostname filenames, unioned by identical content",
+  "limitations": "Filename-derived site grouping and publisher labels have not been independently verified; no temporal/source holdout.",
+  "seed": 42,
+  "split_counts": {
+    "test": {
+      "groups": 2394,
+      "legitimate": 2296,
+      "phishing": 245,
+      "rows": 2541
+    },
+    "train": {
+      "groups": 7179,
+      "legitimate": 6872,
+      "phishing": 1908,
+      "rows": 8780
+    },
+    "val": {
+      "groups": 2394,
+      "legitimate": 2281,
+      "phishing": 304,
+      "rows": 2585
+    }
+  },
+  "unique_rows": 13906
+}

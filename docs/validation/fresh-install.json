@@ -1,0 +1,9 @@
+{
+  "application_version": "2.0.1",
+  "new_environment_install": "passed",
+  "pip_check": "No broken requirements found.",
+  "doctor_ready": true,
+  "authenticated_smoke": "passed",
+  "services_stopped": true,
+  "session_key_removed": true
+}

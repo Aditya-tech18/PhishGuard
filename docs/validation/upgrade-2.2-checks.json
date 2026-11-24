@@ -1,0 +1,33 @@
+{
+  "version": "2.2.0",
+  "pytest": {
+    "passed": 162,
+    "warnings": 9,
+    "seconds": 129.23,
+    "statement_coverage_percent": 77,
+    "all_optional_markers_enabled": true
+  },
+  "ruff": "passed",
+  "javascript_syntax": "passed",
+  "bandit_medium_high_findings": 1,
+  "trained_cloud_browser": {
+    "trained_model": "3a4516d9641014ee",
+    "actual_http_prediction": "passed",
+    "consent_and_query_stripping": "passed",
+    "memory_only_key": "passed",
+    "mobile_no_horizontal_overflow": "passed",
+    "external_requests": 0,
+    "console_errors": []
+  },
+  "real_extension": {
+    "actual_toolbar": true,
+    "real_url_model": true,
+    "real_cnn": true,
+    "on_off_and_per_capture_consent": "passed",
+    "session_key_clear": "passed"
+  },
+  "managed_launcher": "authenticated URL/image smoke passed; stopped with transient key cleanup",
+  "remote_vercel_deployment": "not attempted; user chose ZIP and deploy-ready build",
+  "independent_model_certification": false,
+  "final_container_runtime": "passed"
+}

@@ -1,0 +1,41 @@
+{
+  "scope": "Image + lexical domain, NOT image-only CNN; domain derived from declared filename-host source; no test scoring or selection",
+  "candidates": {
+    "logistic": {
+      "selection_pr_auc": 0.7778795781379118,
+      "selection_balanced": {
+        "precision": 0.7058823529411765,
+        "recall": 0.7024390243902439,
+        "min_precision_recall": 0.7024390243902439
+      },
+      "fit_seconds": 0.032179166038986295
+    },
+    "gradient-100": {
+      "selection_pr_auc": 0.8145348345850703,
+      "selection_balanced": {
+        "precision": 0.7536945812807881,
+        "recall": 0.7463414634146341,
+        "min_precision_recall": 0.7463414634146341
+      },
+      "fit_seconds": 25.602209249977022
+    },
+    "gradient-200": {
+      "selection_pr_auc": 0.8242427838452068,
+      "selection_balanced": {
+        "precision": 0.75,
+        "recall": 0.7463414634146341,
+        "min_precision_recall": 0.7463414634146341
+      },
+      "fit_seconds": 51.40392166696256
+    },
+    "random-forest": {
+      "selection_pr_auc": 0.8073542033775406,
+      "selection_balanced": {
+        "precision": 0.7268292682926829,
+        "recall": 0.7268292682926829,
+        "min_precision_recall": 0.7268292682926829
+      },
+      "fit_seconds": 2.6034841670189053
+    }
+  }
+}

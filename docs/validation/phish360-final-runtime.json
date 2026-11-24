@@ -1,0 +1,25 @@
+{
+  "application_version": "2.4.0",
+  "model_version": "experimental-cnn-v1-5eb842485190",
+  "model_sha256": "5eb84248519052f38b5372637075d17fa309b5a421adca07dc3820b9c4c83d0a",
+  "threshold": 0.27916863560676575,
+  "actual_final_model_loaded": true,
+  "raw_vs_training_derivative_checks": [
+    {
+      "class": 0,
+      "raw_and_derivative_score_match": true
+    },
+    {
+      "class": 1,
+      "raw_and_derivative_score_match": true
+    }
+  ],
+  "authenticated_image_predictions": 2,
+  "health_and_url_prediction": "PASS",
+  "no_key_rejected": "PASS",
+  "missing_capture_consent_rejected": "PASS",
+  "invalid_image_rejected": "PASS",
+  "image_score_and_verdict_contract": "PASS",
+  "event_database_not_created": true,
+  "live_deployment_performed": false
+}

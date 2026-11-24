@@ -1,0 +1,42 @@
+{
+  "18085": {
+    "health": {
+      "status": "ok",
+      "version": "2.2.0",
+      "model_version": "3a4516d9641014ee",
+      "vision_enabled": false,
+      "vision_model_version": null
+    },
+    "authenticated_url": 200,
+    "missing_key": 401,
+    "untrusted_host": 400,
+    "image_inference": "disabled"
+  },
+  "18086": {
+    "health": {
+      "status": "ok",
+      "version": "2.2.0",
+      "model_version": "3a4516d9641014ee",
+      "vision_enabled": true,
+      "vision_model_version": "experimental-cnn-v1-73e5ebb5ae6d"
+    },
+    "authenticated_url": 200,
+    "missing_key": 401,
+    "untrusted_host": 400,
+    "image_inference": 200
+  },
+  "kafka": "real broker produce/consume passed",
+  "container_policy": {
+    "api": {
+      "uid": 10001,
+      "read_only_root": true,
+      "cap_drop": "ALL"
+    },
+    "vision": {
+      "uid": 10001,
+      "read_only_root": true,
+      "cap_drop": "ALL"
+    }
+  },
+  "result": "passed"
+}

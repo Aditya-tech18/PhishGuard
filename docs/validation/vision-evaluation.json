@@ -1,0 +1,149 @@
+{
+  "architecture": "spatial-v2",
+  "seed": 42,
+  "device": "cpu",
+  "positive_class_weight": 3.60167714884696,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.9567006977652635,
+      "val_loss": 0.6960648861337215
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.812158338002572,
+      "val_loss": 0.6497980994458816
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.7314822126358137,
+      "val_loss": 0.6698018463483401
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.6792081757395577,
+      "val_loss": 0.6192271438742514
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.6432270193833154,
+      "val_loss": 0.5708605348141558
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.6259709324136139,
+      "val_loss": 0.5797716986279884
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.5912528707253363,
+      "val_loss": 0.5670206607540986
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.5786010351973948,
+      "val_loss": 0.5635551789512486
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.558923454898365,
+      "val_loss": 0.5799014882377315
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.5538695709716215,
+      "val_loss": 0.5628544108088288
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.5348588272759475,
+      "val_loss": 0.5506025600825334
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.5323680866552105,
+      "val_loss": 0.5493383742393332
+    }
+  ],
+  "best_validation_loss": 0.5493383742393332,
+  "dataset": {
+    "split_counts": {
+      "test": {
+        "legitimate": 2296,
+        "phishing": 245
+      },
+      "train": {
+        "legitimate": 6872,
+        "phishing": 1908
+      },
+      "val": {
+        "legitimate": 2281,
+        "phishing": 304
+      }
+    },
+    "rows": 13906,
+    "manifest_fingerprint": "513797b2822568fab2b47e007ea1c57234131aab05424aea8c12faf1eb91923a",
+    "explicit_group_isolation": true
+  },
+  "threshold": 0.7599999999999999,
+  "selection": {
+    "constraint_satisfied": true,
+    "max_fpr": 0.05,
+    "validation": {
+      "rows": 2585,
+      "threshold": 0.7599999999999999,
+      "precision": 0.5347826086956522,
+      "recall": 0.40460526315789475,
+      "f1": 0.4606741573033708,
+      "pr_auc": 0.5343199594447163,
+      "roc_auc": 0.8640658529269251,
+      "brier": 0.10294283445834042,
+      "false_positive_rate": 0.04690925032880316,
+      "confusion": {
+        "tn": 2174,
+        "fp": 107,
+        "fn": 181,
+        "tp": 123
+      }
+    }
+  },
+  "validation": {
+    "rows": 2585,
+    "threshold": 0.7599999999999999,
+    "precision": 0.5347826086956522,
+    "recall": 0.40460526315789475,
+    "f1": 0.4606741573033708,
+    "pr_auc": 0.5343199594447163,
+    "roc_auc": 0.8640658529269251,
+    "brier": 0.10294283445834042,
+    "false_positive_rate": 0.04690925032880316,
+    "confusion": {
+      "tn": 2174,
+      "fp": 107,
+      "fn": 181,
+      "tp": 123
+    }
+  },
+  "model_version": "experimental-cnn-v1-73e5ebb5ae6d",
+  "class_polarity": "0=legitimate, 1=phishing",
+  "weights_sha256": "73e5ebb5ae6d686ec40cb3f3b9ed451f5f0b120893c21037adb368dbcd637096",
+  "limitations": "Uncalibrated CNN; independent held-out site evaluation required.",
+  "held_out_test": {
+    "rows": 2541,
+    "threshold": 0.7599999999999999,
+    "precision": 0.525,
+    "recall": 0.34285714285714286,
+    "f1": 0.4148148148148148,
+    "pr_auc": 0.5319346063183915,
+    "roc_auc": 0.8699326246177914,
+    "brier": 0.090746153123986,
+    "false_positive_rate": 0.033101045296167246,
+    "confusion": {
+      "tn": 2220,
+      "fp": 76,
+      "fn": 161,
+      "tp": 84
+    }
+  },
+  "experiment_notes": "Architecture candidate selected using validation loss only. Same previously observed held-out test split; not a new independent certification set. Resized derivatives reused from private provenance-matched original cache."
+}

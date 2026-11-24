@@ -1,0 +1,85 @@
+........................................................................ [ 53%]
+...............................................................          [100%]
+=============================== warnings summary ===============================
+work/venv/lib/python3.11/site-packages/fastapi/testclient.py:1
+  $WORKSPACE/work/venv/lib/python3.11/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+tests/test_spark.py::test_image_metadata_no_pixels_and_boolean_partitions
+tests/test_spark.py::test_image_metadata_no_pixels_and_boolean_partitions
+tests/test_spark.py::test_image_metadata_no_pixels_and_boolean_partitions
+tests/test_spark.py::test_image_metadata_no_pixels_and_boolean_partitions
+  $WORKSPACE/work/venv/lib/python3.11/site-packages/pyspark/sql/pandas/utils.py:37: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+    if LooseVersion(pandas.__version__) < LooseVersion(minimum_pandas_version):
+
+tests/test_spark.py::test_image_metadata_no_pixels_and_boolean_partitions
+tests/test_spark.py::test_image_metadata_no_pixels_and_boolean_partitions
+tests/test_spark.py::test_image_metadata_no_pixels_and_boolean_partitions
+tests/test_spark.py::test_image_metadata_no_pixels_and_boolean_partitions
+  $WORKSPACE/work/venv/lib/python3.11/site-packages/pyspark/sql/pandas/utils.py:64: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+    if LooseVersion(pyarrow.__version__) < LooseVersion(minimum_pyarrow_version):
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================ tests coverage ================================
+______________ coverage: platform darwin, python 3.11.18-final-0 _______________
+
+Name                                                                     Stmts   Miss  Cover   Missing
+------------------------------------------------------------------------------------------------------
+outputs/PhishGuard-2.0/src/phishguard/__init__.py                            1      0   100%
+outputs/PhishGuard-2.0/src/phishguard/analytics/__init__.py                  0      0   100%
+outputs/PhishGuard-2.0/src/phishguard/analytics/campaign_detection.py       11      0   100%
+outputs/PhishGuard-2.0/src/phishguard/analytics/drift.py                    21      3    86%   10, 12, 20
+outputs/PhishGuard-2.0/src/phishguard/analytics/generate_metrics.py          8      0   100%
+outputs/PhishGuard-2.0/src/phishguard/analytics/spark_analytics.py           7      7     0%   4-11
+outputs/PhishGuard-2.0/src/phishguard/api/__init__.py                        0      0   100%
+outputs/PhishGuard-2.0/src/phishguard/api/main.py                           82      6    93%   32-34, 51-52, 92, 111
+outputs/PhishGuard-2.0/src/phishguard/api/middleware.py                    102      3    97%   99, 121, 134
+outputs/PhishGuard-2.0/src/phishguard/api/prediction_store.py               62      3    95%   14, 20, 68
+outputs/PhishGuard-2.0/src/phishguard/api/routes.py                         45      0   100%
+outputs/PhishGuard-2.0/src/phishguard/cli.py                               203     87    57%   106-126, 129, 136-150, 158-160, 162-166, 178-182, 194-205, 207-239, 244-290, 302
+outputs/PhishGuard-2.0/src/phishguard/common/__init__.py                     0      0   100%
+outputs/PhishGuard-2.0/src/phishguard/common/config.py                      51      6    88%   42, 46, 52, 54, 56, 58
+outputs/PhishGuard-2.0/src/phishguard/common/files.py                       82      8    90%   23, 30, 38, 42, 45, 50, 82-83
+outputs/PhishGuard-2.0/src/phishguard/common/logging.py                     11      2    82%   17-19
+outputs/PhishGuard-2.0/src/phishguard/common/schemas.py                     43      1    98%   44
+outputs/PhishGuard-2.0/src/phishguard/dashboard/__init__.py                  0      0   100%
+outputs/PhishGuard-2.0/src/phishguard/dashboard/app.py                      83     83     0%   3-110
+outputs/PhishGuard-2.0/src/phishguard/dashboard/components.py               39      9    77%   34, 52-53, 64-65, 71-72, 74-75
+outputs/PhishGuard-2.0/src/phishguard/dashboard/data_loader.py              13      9    31%   9-19
+outputs/PhishGuard-2.0/src/phishguard/dashboard/reports.py                  14      6    57%   15-20
+outputs/PhishGuard-2.0/src/phishguard/dashboard/theme.py                     3      0   100%
+outputs/PhishGuard-2.0/src/phishguard/features/__init__.py                   0      0   100%
+outputs/PhishGuard-2.0/src/phishguard/features/feature_schema.py             5      0   100%
+outputs/PhishGuard-2.0/src/phishguard/features/url_features.py              81      4    95%   29, 38, 66, 77
+outputs/PhishGuard-2.0/src/phishguard/ingestion/__init__.py                  0      0   100%
+outputs/PhishGuard-2.0/src/phishguard/ingestion/inspect_dataset.py          15      0   100%
+outputs/PhishGuard-2.0/src/phishguard/ingestion/load_dataset.py             27      2    93%   24, 38
+outputs/PhishGuard-2.0/src/phishguard/ingestion/verify_dataset.py           18     18     0%   3-22
+outputs/PhishGuard-2.0/src/phishguard/ml/__init__.py                         0      0   100%
+outputs/PhishGuard-2.0/src/phishguard/ml/diagnostics.py                     65      9    86%   16, 44, 47, 56-57, 86, 88, 119-120
+outputs/PhishGuard-2.0/src/phishguard/ml/evaluate_models.py                 13      2    85%   19, 21
+outputs/PhishGuard-2.0/src/phishguard/ml/model_registry.py                  84      4    95%   14, 28, 40, 53
+outputs/PhishGuard-2.0/src/phishguard/ml/offline_evaluation.py              40     11    72%   23-26, 28, 31, 52-58
+outputs/PhishGuard-2.0/src/phishguard/ml/portable.py                       147     13    91%   49, 69, 92, 98, 112, 114, 118, 120, 125, 130, 169, 184, 204
+outputs/PhishGuard-2.0/src/phishguard/ml/registry.py                       113     10    91%   84, 92, 106-108, 115, 119, 123, 136, 163, 169
+outputs/PhishGuard-2.0/src/phishguard/ml/select_model.py                    14      2    86%   9, 16
+outputs/PhishGuard-2.0/src/phishguard/ml/tournament.py                      96      9    91%   38, 64, 74, 77, 79, 107, 112, 137, 149
+outputs/PhishGuard-2.0/src/phishguard/ml/train_models.py                    54      3    94%   34, 48, 83
+outputs/PhishGuard-2.0/src/phishguard/ml/vision.py                         100     19    81%   51, 53, 55, 57, 82, 102-104, 125-134, 146, 149
+outputs/PhishGuard-2.0/src/phishguard/ml/vision_dataset.py                 111     16    86%   27, 30, 32, 34, 54, 57, 60, 65, 85, 96, 100, 102, 106, 113, 123, 135
+outputs/PhishGuard-2.0/src/phishguard/processing/__init__.py                 0      0   100%
+outputs/PhishGuard-2.0/src/phishguard/processing/build_features.py           9      0   100%
+outputs/PhishGuard-2.0/src/phishguard/processing/clean_urls.py              27      4    85%   15, 23, 25, 43
+outputs/PhishGuard-2.0/src/phishguard/processing/image_etl.py               70     30    57%   14-39, 45, 49, 57, 89-98, 124, 130
+outputs/PhishGuard-2.0/src/phishguard/processing/process_images.py          37     17    54%   13, 19, 22, 38-57
+outputs/PhishGuard-2.0/src/phishguard/processing/spark_session.py           13      3    77%   18, 20, 25
+outputs/PhishGuard-2.0/src/phishguard/processing/write_parquet.py           20      1    95%   23
+outputs/PhishGuard-2.0/src/phishguard/showcase.py                          147     99    33%   48-49, 56, 59-61, 64, 66-67, 71, 85-103, 107-126, 130-267
+outputs/PhishGuard-2.0/src/phishguard/streaming/__init__.py                  0      0   100%
+outputs/PhishGuard-2.0/src/phishguard/streaming/kafka_consumer.py           38     22    42%   14, 24-54
+outputs/PhishGuard-2.0/src/phishguard/streaming/kafka_producer.py           37      7    81%   16, 19-24, 26, 50, 56
+outputs/PhishGuard-2.0/src/phishguard/streaming/publish_predictions.py       9      0   100%
+outputs/PhishGuard-2.0/src/phishguard/streaming/stream_predict.py           30     30     0%   8-93
+------------------------------------------------------------------------------------------------------
+TOTAL                                                                     2301    568    75%
+135 passed, 9 warnings in 141.61s (0:02:21)

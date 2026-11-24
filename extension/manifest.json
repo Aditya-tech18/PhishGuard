@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "PhishGuard 2.0",
+  "version": "2.6.1",
+  "description": "OFF by default. Opt-in automatic domain checks across supported tabs, scam warnings, and separately consented screenshot checks.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting",
+    "alarms"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:8000/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "PhishGuard",
+    "default_icon": {
+      "128": "icon128.png"
+    }
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'"
+  },
+  "minimum_chrome_version": "116",
+  "optional_host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "optional_permissions": [
+    "notifications"
+  ],
+  "icons": {
+    "128": "icon128.png"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvQdgUIcY0vxXOwwMOY0y3j9FmFiPEO54M8ACzHu4Gwu3K3719jEe5Mcb8ceyKHfaLpuA2mzxXwMxnEsMfRz/AS+BzFSqy5oJnVEjaBofBDnp4c/sWobUNwwx8iBT6Yro3Ojp613fTbsD7X4ZNOUvpcnl/E6atYKVKjrSPZVKC10IgL9t4KtcbSLoS38QHFfho0UkFkL9aIGZbOA6NEgKSPZAE6HlkE5Aryeg5nFfdGGZmB8kcbWCNfRguLlJlS6wfbUSRska7MP29RLwX6H94OwWLLxr4XWDtN0qPsEl1JBLTbjzrEgUZMrYKKTzhAFsBv+iCfHXZwscJrNnkjGL3wIDAQAB",
+  "externally_connectable": {
+    "matches": [
+      "http://127.0.0.1/*",
+      "http://localhost/*"
+    ]
+  }
+}

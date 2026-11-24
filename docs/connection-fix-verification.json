@@ -1,0 +1,41 @@
+{
+  "release": "2.6.1",
+  "selected_python_checks": 73,
+  "extension_behavior_checks": 20,
+  "new_folder_inference_smoke": true,
+  "live_browser_test": {
+    "passed": true,
+    "extensionId": "meiljplconooecpgopbjdpakkdahoibf",
+    "checks": [
+      "same-origin session bootstrap",
+      "extension pairing",
+      "dashboard ON acknowledged",
+      "new-tab actual URL model result via WebSocket",
+      "query privacy",
+      "three dashboard routes",
+      "OFF clears tab state",
+      "no JS errors"
+    ],
+    "testOnly": "isolated Chrome profile with optional host permissions pregranted; shipping permissions remain opt-in"
+  },
+  "missing_extension_flow": {
+    "passed": true,
+    "checks": [
+      "missing extension opens setup dialog",
+      "guided Chrome install steps",
+      "actual new project path",
+      "authenticated extension ZIP download",
+      "honest uninstalled-state message"
+    ]
+  },
+  "original_project_modified": false,
+  "native_permission_dialog_automated": false,
+  "dataset_integrity": {
+    "original_dataset_crc_verified_files": 21313,
+    "phish360_extracted_files": 42995,
+    "phish360_uncompressed_bytes": 6919105249,
+    "seconds": 338.82060349999665,
+    "raw_html": "Inert data only; not rendered or executed",
+    "original_project_modified": false
+  }
+}

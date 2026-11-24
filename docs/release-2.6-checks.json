@@ -1,0 +1,42 @@
+{
+  "release": "2.6.0",
+  "python_selected_checks": 72,
+  "node_behavior_checks": 20,
+  "dashboard_integration": {
+    "passed": true,
+    "extensionId": "meiljplconooecpgopbjdpakkdahoibf",
+    "checks": [
+      "same-origin session bootstrap",
+      "extension pairing",
+      "dashboard ON acknowledged",
+      "new-tab actual URL model result via WebSocket",
+      "query privacy",
+      "three dashboard routes",
+      "OFF clears tab state",
+      "no JS errors"
+    ],
+    "testOnly": "isolated Chrome profile with optional host permissions pregranted; shipping permissions remain opt-in"
+  },
+  "extension_warning_integration": {
+    "passed": true,
+    "checks": [
+      "OFF: zero automatic requests",
+      "Actual popup ON scans existing tab; origin-only payload; no low-risk popup",
+      "Real new-tab page warning; friendly wording; model reason rendered as inert text",
+      "Dismiss works; navigation rechecks; OFF removes warning and stops new requests",
+      "Late phishing response discarded after navigation",
+      "Late phishing response discarded after OFF",
+      "No browsing results/URLs stored; no automatic screenshots"
+    ],
+    "playwright": "1.65.1",
+    "chromium": "159.0.8154.6",
+    "native_optional_permission_prompt_automated": false,
+    "fixture_policy": "Isolated profile; pregranted website hosts and ephemeral deterministic local API; synthetic .test pages only",
+    "live_phishing_sites_visited": false,
+    "personal_browser_profile_used": false
+  },
+  "model_weights_retrained": false,
+  "fresh_independent_cnn_evaluation": false,
+  "desktop_model_and_pages_smoke": true,
+  "desktop_existing_raw_data_modified": false
+}

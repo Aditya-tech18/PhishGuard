@@ -1,0 +1,41 @@
+{
+  "scope": "Domain character + image features, explicitly NOT image-only CNN; train-only vectorizer/SVD/PCA; no test scoring",
+  "candidates": {
+    "chars-only-15": {
+      "selection_pr_auc": 0.5925639533703948,
+      "selection_balanced": {
+        "precision": 0.5631578947368421,
+        "recall": 0.5219512195121951,
+        "min_precision_recall": 0.5219512195121951
+      },
+      "fit_seconds": 34.64261570799863
+    },
+    "chars-only-31": {
+      "selection_pr_auc": 0.5897458243735683,
+      "selection_balanced": {
+        "precision": 0.5365853658536586,
+        "recall": 0.5365853658536586,
+        "min_precision_recall": 0.5365853658536586
+      },
+      "fit_seconds": 36.88971204200061
+    },
+    "image-and-chars-15": {
+      "selection_pr_auc": 0.7246158512015166,
+      "selection_balanced": {
+        "precision": 0.6456310679611651,
+        "recall": 0.6487804878048781,
+        "min_precision_recall": 0.6456310679611651
+      },
+      "fit_seconds": 52.939332749985624
+    },
+    "image-and-chars-31": {
+      "selection_pr_auc": 0.7199373119324004,
+      "selection_balanced": {
+        "precision": 0.6456310679611651,
+        "recall": 0.6487804878048781,
+        "min_precision_recall": 0.6456310679611651
+      },
+      "fit_seconds": 61.90956154098967
+    }
+  }
+}
